@@ -1,0 +1,163 @@
+.head
+    height: 148px
+    background: #F8F3F4
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    &__heading
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        color: #F16D7F
+
+.breadcrumbs
+    &__ul
+        display: flex
+    &__li
+        list-style-type: none
+        &:last-of-type .breadcrumbs__link
+            font-weight: bold
+            color: #EF5B70
+
+        &:not(:last-of-type)::after
+            content: '/'
+            padding-left: 6px
+            padding-right: 6px
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            color: #636363
+
+    &__link
+        font-weight: 300
+        font-size: 14px
+        line-height: 17px
+        color: #636363
+        &:hover
+            color: #EF5B70
+
+.filter-sort
+    padding-top: 36px
+    padding-bottom: 64px
+    display: flex
+    gap: 30px
+
+.filter
+    width: (1140px - 2 * 30px) / 3
+    position: relative
+
+    &__details
+        padding: 12px 16px
+        position: absolute
+        width: 100%
+        z-index: 1
+        box-sizing: border-box
+        &[open]
+            background: #FFFFFF
+            box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        &[open] .filter__summary
+            color: #EF5B70
+
+        &[open] .filter__summary path
+            fill: #EF5B70
+
+    &__summary
+        display: flex
+        align-items: center
+        gap: 11px
+
+    &__category
+        border-left: 5px solid #EF5B70
+
+        padding-top: 11px
+
+        &_border-bottom
+            border-bottom: 1px solid #EBEBEB
+            padding-bottom: 11px
+            padding-left: 11px
+
+    &__details-in
+        padding-top: 16px
+
+        &[open] .filter__category
+            color: #EF5B70
+
+    &__box-link
+        display: flex
+        flex-direction: column
+        gap: 11px
+        padding: 24px 16px
+
+    &__link
+        font-size: 14px
+        line-height: 17px
+        color: #6F6E6E
+        &:hover
+            color: #EF5B70
+
+.sort
+    display: flex
+    gap: 28px
+    color: #6F6E6E
+    padding-top: 12px
+
+    &__details
+
+    &__summary
+        display: flex
+        gap: 10px
+        align-items: baseline
+
+    &__box
+        display: flex
+        flex-direction: column
+        gap: 6px
+        position: absolute
+        z-index: 1
+        margin-top: 5px
+        background: #FFFFFF
+        box-shadow: 6px 4px 35px rgba(0, 0, 0, 0.21)
+        padding: 7px 30px 11px 9px
+        margin-left: -11px
+
+    &__item
+        font-family: Roboto
+        font-style: normal
+        font-weight: normal
+        font-size: 14px
+        line-height: 16px
+        color: #6F6E6E
+        display: flex
+        gap: 9px
+
+.check
+    height: 12px
+    width: 12px
+    border: 1px solid #EBEBEB
+    border-radius: 2px
+.checkbox
+    opacity: 0
+    &:checked
+        opacity: 1
+    &:checked .check
+        border: none
+
+.pagination
+    display: flex
+    align-items: center
+    justify-content: center
+    gap: 21px
+    border: 1px solid #EBEBEB
+    height: 44px
+    width: 284px
+    margin-top: 48px
+    margin-left: auto
+    margin-right: auto
+
+    &__li
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #C4C4C4

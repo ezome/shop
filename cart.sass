@@ -1,0 +1,176 @@
+.cart
+    padding-top: 96px
+    display: flex
+    gap: 130px
+    padding-bottom: 128px
+
+    &__left
+        display: flex
+        flex-direction: column
+        width: 652px
+        gap: 40px
+
+        &__buttons
+            display: flex
+            justify-content: space-between
+            padding-top: 32px
+
+        &__button
+            font-style: normal
+            font-weight: 300
+            font-size: 14px
+            line-height: 17px
+            color: #000000
+            padding: 16px 40px
+            background: none
+            border: 1px solid #A4A4A4
+            transition: all .4s
+
+            &:hover
+                background: #F16D7F
+                color: #FFFFFF
+
+    &__product
+        display: flex
+        align-items: flex-start
+        width: 652px
+        background: #FFFFFF
+        filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13))
+
+    &__info
+        padding-top: 22px
+        padding-left: 31px
+        padding-bottom: 62px
+        width: 262px
+
+    &__close
+        margin: 28px 22px 0px 57px
+
+    &__heading
+        font-style: normal
+        font-weight: normal
+        font-size: 24px
+        line-height: 29px
+        color: #222222
+        padding-bottom: 42px
+
+    &__options
+        font-style: normal
+        font-weight: normal
+        font-size: 22px
+        line-height: 26px
+        color: #575757
+        display: flex
+        flex-direction: column
+        gap: 6px
+
+        &__price
+            color: #EF5B70
+
+        &__quantity
+            font-size: 18px
+            line-height: 22px
+            color: #656565
+            border: 1px solid #EAEAEA
+            padding-left: 16px
+            padding-right: 16px
+            margin-left: 24px
+
+    &__right
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        gap: 22px
+
+        &__heading
+            font-style: normal
+            font-weight: 300
+            font-size: 16px
+            line-height: 19px
+            color: #222222
+
+        &__input
+            height: 45px
+            width: 360px
+            padding-left: 17px
+            padding-right: 17px
+            box-sizing: border-box
+            background: none
+            font-style: normal
+            font-weight: 300
+            font-size: 13px
+            line-height: 16px
+            color: #222222
+            border: 1px solid #A4A4A4
+            outline: none
+
+        &__button
+            font-size: 11px
+            line-height: 13px
+            color: #4A4A4A
+            height: 34px
+            width: 101px
+            padding: 0
+            text-align: center
+            transition: all .4s
+            &:hover
+                background: #F16D7F
+                color: #FFFFFF
+
+.cost
+    background: #F5F3F3
+    height: 214px
+    width: 360px
+    margin-top: 35px
+    display: flex
+    flex-direction: column
+    align-items: center
+
+    &__total-sub
+        font-style: normal
+        font-weight: normal
+        font-size: 11px
+        line-height: 13px
+        color: #4A4A4A
+        align-self: flex-end
+        padding: 39px 34px 12px
+
+        &__sp
+            padding-left: 30px
+
+    &__total
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #222222
+        align-self: flex-end
+        padding-right: 37px
+
+        &__sp
+            font-weight: bold
+            color: #F16D7F
+            padding-left: 30px
+
+    &__bd
+        background: #E2E2E2
+        margin-bottom: 17px
+        margin-top: 21px
+        height: 1px
+        width: 275px
+
+    &__button
+        background: #F16D7F
+        font-style: normal
+        font-weight: 300
+        font-size: 16px
+        line-height: 19px
+        color: #FFFFFF
+        height: 50px
+        width: 273px
+        border: none
+        margin-bottom: 42px
+        transition: all .4s
+
+        &:hover
+            background: #E05C6E
